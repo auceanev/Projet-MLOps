@@ -118,7 +118,7 @@ La **GitHub Actions** automatise la génération et le déploiement des images D
     2. Poussée sur Amazon ECR.
     3. Déployée automatiquement sur App Runner.
 
-- Une fois le trois étapes réalisées, l'application est en ligne et prête à être utilisée. Vous pourez mettre à jour les éléments de chaque étapes indépendamment.
+- Une fois les trois étapes réalisées, l'application est en ligne et prête à être utilisée. On peut mettre à jour les éléments de chaque étapes indépendamment.
 
 ---
 
@@ -188,7 +188,7 @@ La problématique non résolu par manque de temps est le partage dynamique de l'
     - [Documentation OIDC GitHub-AWS](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services)
 
 3. **Bonnes pratiques** :
-    - Ne jamais committer vos clés AWS dans le code.
+    - Ne jamais committer les clés AWS dans le code.
     - Envisagez d’utiliser des solutions comme AWS Secrets Manager pour centraliser les secrets.
 
 ---
@@ -218,7 +218,7 @@ La problématique non résolu par manque de temps est le partage dynamique de l'
 
 ## Notes finales
 
-Ce projet met en œuvre un pipeline moderne avec un déploiement sans serveur sur AWS. Les bonnes pratiques d’automatisation et de gestion des conteneurs sont au cœur de la solution, avec des améliorations possibles pour optimiser encore la sécurité et la scalabilité.
+Ce projet met en œuvre une pipeline moderne avec un déploiement sans serveur sur AWS. Les bonnes pratiques d’automatisation et de gestion des conteneurs sont au cœur de la solution, avec des améliorations possibles pour optimiser encore la sécurité et la scalabilité.
 
 ## Auteurs
 - [Auceane TITOT] - [Inès SEKARI] - [Malaïka NKUIDA] - [Lena DEMANOU]
