@@ -132,6 +132,36 @@ L’API Flask dispose de deux routes principales :
 
 2. **POST `/predict`**
     - **Description** : Prédiction de la qualité du vin.Il
+    - **Requête (JSON)** :
+    ```json
+   {
+      "features": [7.4, 0.7, 0, 1.9, 0.076, 11, 34, 0.9978, 3.51, 0.56, 9.4]
+    }
+   ```
+
+
+Chaque élément de la liste correspond à une caractéristique chimique du vin, dans l’ordre suivant :
+ - fixed acidity
+ - volatile acidity
+ - citric acid
+ - residual sugar
+ - chlorides
+ - free sulfur dioxide
+ - total sulfur dioxide
+ - density
+ - pH
+ - sulphates
+ - alcohol
+
+- **Réponse attendue** :(Code HTTP 200 - Succès) :
+ ```json
+ {
+   "prediction": "good",
+   "confidence": 0.85
+ }
+ ```
+ - **prediction** : Résultat de la classification ("good" ou "bad").
+ - **confidence** : Confiance du modèle (entre 0 et 1).
 
 3. **GET `/metrics`**
     - **Description** : Récupère les métriques de l'API.
@@ -189,3 +219,6 @@ La problématique non résolu par manque de temps est le partage dynamique de l'
 ## Notes finales
 
 Ce projet met en œuvre un pipeline moderne avec un déploiement sans serveur sur AWS. Les bonnes pratiques d’automatisation et de gestion des conteneurs sont au cœur de la solution, avec des améliorations possibles pour optimiser encore la sécurité et la scalabilité.
+
+## Auteurs
+- [Auceane TITOT] - [Inès SEKARI] - [Malaïka NKUIDA] - [Lena DEMANOU]
