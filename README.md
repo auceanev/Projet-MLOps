@@ -129,7 +129,7 @@ L’API Flask dispose de deux routes principales :
 1. **GET `/`**
     - **Description** : Teste si l’API est en ligne.
     - **Réponse attendue** : `"Hello World!"`
-
+   
 2. **POST `/predict`**
     - **Description** : Prédiction de la qualité du vin.Il
     - **Requête (JSON)** :
@@ -138,6 +138,7 @@ L’API Flask dispose de deux routes principales :
       "features": [7.4, 0.7, 0, 1.9, 0.076, 11, 34, 0.9978, 3.51, 0.56, 9.4]
     }
    ```
+
 
 
 Chaque élément de la liste correspond à une caractéristique chimique du vin, dans l’ordre suivant :
@@ -166,6 +167,17 @@ Chaque élément de la liste correspond à une caractéristique chimique du vin,
 3. **GET `/metrics`**
     - **Description** : Récupère les métriques de l'API.
 
+ - **Exemple d’utilisation avec cURL**:
+- Tester la route / :
+```bash
+    curl -X GET http://127.0.0.1:5000/
+```
+- Tester la route /predict:
+ ```bash
+curl -X POST http://127.0.0.1:5000/predict \
+-H "Content-Type: application/json" \
+-d '{"features": [7.4, 0.7, 0, 1.9, 0.076, 11, 34, 0.9978, 3.51, 0.56, 9.4]}'
+ ```
 ---
 
 ### Monitoring avec Grafana et Prometheus
