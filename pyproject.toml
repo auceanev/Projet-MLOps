@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "projet-mlops"
+version = "0.1.0"
+description = ""
+authors = ["Clac9queur <45608170+Clac9queur@users.noreply.github.com>"]
+readme = "README.md"
+package-mode = false
+packages = [
+    { include = "app"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2"
+seaborn = "^0.13"
+matplotlib = "^3.10"
+scikit-learn = "^1.6"
+flask = "^3.0"
+mlflow = "^2.19"
+prometheus-flask-exporter = "^0.23.1"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
