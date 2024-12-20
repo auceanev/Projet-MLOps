@@ -221,6 +221,8 @@ La problématique non résolu par manque de temps est le partage dynamique de l'
 4. **Application** :
     - L’application est entièrement containerisée.
     - Les dépendances Python sont gérées avec **Poetry** pour une meilleure reproductibilité.
+    - Flask pour le backend API.
+    - MLflow pour le suivi des expérimentations ML.
 
 5. **Améliorations possibles** :
     - Configuration d’OIDC pour sécuriser les secrets.
