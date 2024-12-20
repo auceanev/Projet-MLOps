@@ -167,7 +167,7 @@ Chaque élément de la liste correspond à une caractéristique chimique du vin,
 3. **GET `/metrics`**
     - **Description** : Récupère les métriques de l'API.
 
- - **Exemple d’utilisation avec cURL**:
+Exemple d’utilisation avec cURL:
 - Tester la route / :
 ```bash
     curl -X GET http://127.0.0.1:5000/
